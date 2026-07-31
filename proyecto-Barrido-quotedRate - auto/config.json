@@ -1,0 +1,40 @@
+{
+  "database": {
+    "server": "BDSERVER4;",
+    "dbname": "dbAreaCorp;",
+    "user": "usr_QueriesYielding;",
+    "password": "Y13ld$_Qu3ry+;",
+    "driver": "ODBC Driver 17 for SQL Server"
+  },
+  "db_barrido": {
+    "driver": "ODBC Driver 17 for SQL Server",
+    "server": "svrbdpricing",
+    "database": "CatalogosYielding",
+    "usernameDB": "yield",
+    "passwordDB": "Y13ld-15",
+    "table": "dbo.Barrido_quoted"
+  },
+  "mailAppPass": {
+    "sender": "angel.osalde@avis.com.mx",
+    "receiver": [
+      "angel.osalde@avis.com.mx"
+    ],
+    "passwordMail": "zrbc hcvy uaeh nnmj"
+  },
+  "automatizacion": {
+    "prueba": false,
+    "days_back": 1,
+    "days_back_por_dia": {
+      "0": 3,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1
+    },
+    "min_reservas": 100,
+    "espera_min_reservas_seg": 300,
+    "reintentos_min_reservas": 5,
+    "reintentos_terminal": 10,
+    "espera_terminal_seg": 60
+  }
+}

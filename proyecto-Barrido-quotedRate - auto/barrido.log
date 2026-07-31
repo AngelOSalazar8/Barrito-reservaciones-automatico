@@ -1,0 +1,384 @@
+2026-07-03 16:30:40 [INFO    ] __main__ - =================================================================
+2026-07-03 16:30:40 [INFO    ] __main__ - INICIO DEL BARRIDO AUTOMATICO - 2026-07-03 16:30:40
+2026-07-03 16:30:40 [INFO    ] __main__ - =================================================================
+2026-07-03 16:30:40 [INFO    ] modulos.config_loader - Cargando configuracion desde: C:\Users\angel.osalde\Documents\Automation\Barrido-reservaciones-quoted\proyecto-Barrido-quotedRate - auto\config.json
+2026-07-03 16:30:40 [INFO    ] modulos.config_loader - Configuracion cargada y validada correctamente.
+2026-07-03 16:30:40 [INFO    ] __main__ - --- PASO 1/3: Extraccion de reservas desde SQL Server ---
+2026-07-03 16:30:40 [INFO    ] modulos.extractor_sql - Dia de la semana: Friday | days_back determinado: 1
+2026-07-03 16:30:40 [INFO    ] modulos.extractor_sql - Ejecutando consulta SQL (intento 1/5)...
+2026-07-03 16:30:41 [INFO    ] modulos.extractor_sql - Registros encontrados: 212
+2026-07-03 16:30:41 [INFO    ] modulos.extractor_sql - Validacion de minimo OK (212 >= 100).
+2026-07-03 16:30:41 [INFO    ] modulos.extractor_sql - Extraccion SQL completada. Total de registros: 212
+2026-07-03 16:30:41 [INFO    ] __main__ - --- PASO 2/3: Barrido en Wizard/BlueZone ---
+2026-07-03 16:30:41 [INFO    ] modulos.barrido_wizard - Inicializando conexion con BlueZone/Wizard...
+2026-07-03 16:30:41 [INFO    ] modulos.barrido_wizard - Terminal conectada. Iniciando barrido de 212 reservas...
+2026-07-03 16:30:41 [INFO    ] modulos.barrido_wizard - [1/212] Procesando reserva: 19311080MX5
+2026-07-03 16:30:42 [INFO    ] modulos.barrido_wizard - [2/212] Procesando reserva: 19347619MX4
+2026-07-03 16:30:43 [INFO    ] modulos.barrido_wizard - [3/212] Procesando reserva: 19316827PL5
+2026-07-03 16:30:44 [INFO    ] modulos.barrido_wizard - [4/212] Procesando reserva: 19302391US3
+2026-07-03 16:30:44 [INFO    ] modulos.barrido_wizard - [5/212] Procesando reserva: 19343658MX5
+2026-07-03 16:30:45 [INFO    ] modulos.barrido_wizard - [6/212] Procesando reserva: 19305454MX0
+2026-07-03 16:30:46 [INFO    ] modulos.barrido_wizard - [7/212] Procesando reserva: 19336258US4
+2026-07-03 16:30:46 [INFO    ] modulos.barrido_wizard - [8/212] Procesando reserva: 19360820US3
+2026-07-03 16:30:47 [INFO    ] modulos.barrido_wizard - [9/212] Procesando reserva: 19330201MX2
+2026-07-03 16:30:48 [INFO    ] modulos.barrido_wizard - [10/212] Procesando reserva: 19290898MX4
+2026-07-03 16:30:48 [INFO    ] modulos.barrido_wizard - [11/212] Procesando reserva: 19356887US4
+2026-07-03 16:30:49 [INFO    ] modulos.barrido_wizard - [12/212] Procesando reserva: 19328357MX6
+2026-07-03 16:30:50 [INFO    ] modulos.barrido_wizard - [13/212] Procesando reserva: 19315171CO1
+2026-07-03 16:30:51 [INFO    ] modulos.barrido_wizard - [14/212] Procesando reserva: 19338349MX2
+2026-07-03 16:30:51 [INFO    ] modulos.barrido_wizard - [15/212] Procesando reserva: 19333792MX2
+2026-07-03 16:30:52 [INFO    ] modulos.barrido_wizard - [16/212] Procesando reserva: 19256052MX4
+2026-07-03 16:30:53 [INFO    ] modulos.barrido_wizard - [17/212] Procesando reserva: 19349836MX2
+2026-07-03 16:30:53 [INFO    ] modulos.barrido_wizard - [18/212] Procesando reserva: 19329124MX3
+2026-07-03 16:30:54 [INFO    ] modulos.barrido_wizard - [19/212] Procesando reserva: 19276712SE0
+2026-07-03 16:30:55 [INFO    ] modulos.barrido_wizard - [20/212] Procesando reserva: 19357656MX3
+2026-07-03 16:30:56 [INFO    ] modulos.barrido_wizard - [21/212] Procesando reserva: 19329586MX3
+2026-07-03 16:30:56 [INFO    ] modulos.barrido_wizard - [22/212] Procesando reserva: 19311228US6
+2026-07-03 16:30:57 [INFO    ] modulos.barrido_wizard - [23/212] Procesando reserva: 19358475MX3
+2026-07-03 16:30:58 [INFO    ] modulos.barrido_wizard - [24/212] Procesando reserva: 19317259MX3
+2026-07-03 16:30:59 [INFO    ] modulos.barrido_wizard - [25/212] Procesando reserva: 19348586MX5
+2026-07-03 16:30:59 [INFO    ] modulos.barrido_wizard - [26/212] Procesando reserva: 19352042US3
+2026-07-03 16:31:00 [INFO    ] modulos.barrido_wizard - [27/212] Procesando reserva: 19279891US1
+2026-07-03 16:31:00 [INFO    ] modulos.barrido_wizard - [28/212] Procesando reserva: 19356778US0
+2026-07-03 16:31:01 [INFO    ] modulos.barrido_wizard - [29/212] Procesando reserva: 19351853MX3
+2026-07-03 16:31:02 [INFO    ] modulos.barrido_wizard - [30/212] Procesando reserva: 19256609MX1
+2026-07-03 16:31:03 [INFO    ] modulos.barrido_wizard - [31/212] Procesando reserva: 19315339MX1
+2026-07-03 16:31:04 [INFO    ] modulos.barrido_wizard - [32/212] Procesando reserva: 19255785MX3
+2026-07-03 16:31:04 [INFO    ] modulos.barrido_wizard - [33/212] Procesando reserva: 19352462MX3
+2026-07-03 16:31:05 [INFO    ] modulos.barrido_wizard - [34/212] Procesando reserva: 19343266MX5
+2026-07-03 16:31:06 [INFO    ] modulos.barrido_wizard - [35/212] Procesando reserva: 19349572MX4
+2026-07-03 16:31:06 [INFO    ] modulos.barrido_wizard - [36/212] Procesando reserva: 19308738MX1
+2026-07-03 16:31:07 [INFO    ] modulos.barrido_wizard - [37/212] Procesando reserva: 19280528DE1
+2026-07-03 16:31:08 [INFO    ] modulos.barrido_wizard - [38/212] Procesando reserva: 19303185MX6
+2026-07-03 16:31:09 [INFO    ] modulos.barrido_wizard - [39/212] Procesando reserva: 19325719MX0
+2026-07-03 16:31:09 [INFO    ] modulos.barrido_wizard - [40/212] Procesando reserva: 19285492DE2
+2026-07-03 16:31:10 [INFO    ] modulos.barrido_wizard - [41/212] Procesando reserva: 19348296MX2
+2026-07-03 16:31:11 [INFO    ] modulos.barrido_wizard - [42/212] Procesando reserva: 19366062US2
+2026-07-03 16:31:12 [INFO    ] modulos.barrido_wizard - [43/212] Procesando reserva: 19276777GB2
+2026-07-03 16:31:12 [INFO    ] modulos.barrido_wizard - [44/212] Procesando reserva: 19300604DE1
+2026-07-03 16:31:13 [INFO    ] modulos.barrido_wizard - [45/212] Procesando reserva: 19349166MX4
+2026-07-03 16:31:14 [INFO    ] modulos.barrido_wizard - [46/212] Procesando reserva: 19351897MX5
+2026-07-03 16:31:15 [INFO    ] modulos.barrido_wizard - [47/212] Procesando reserva: 19347561MX2
+2026-07-03 16:31:15 [INFO    ] modulos.barrido_wizard - [48/212] Procesando reserva: 19307133MX6
+2026-07-03 16:31:16 [INFO    ] modulos.barrido_wizard - [49/212] Procesando reserva: 19349671MX5
+2026-07-03 16:31:17 [INFO    ] modulos.barrido_wizard - [50/212] Procesando reserva: 19328259MX6
+2026-07-03 16:31:17 [INFO    ] modulos.barrido_wizard - [51/212] Procesando reserva: 19357420US5
+2026-07-03 16:31:18 [INFO    ] modulos.barrido_wizard - [52/212] Procesando reserva: 19355237MX6
+2026-07-03 16:31:19 [INFO    ] modulos.barrido_wizard - [53/212] Procesando reserva: 19353794MX5
+2026-07-03 16:31:20 [INFO    ] modulos.barrido_wizard - [54/212] Procesando reserva: 19313389MX4
+2026-07-03 16:31:20 [INFO    ] modulos.barrido_wizard - [55/212] Procesando reserva: 19363562MX1
+2026-07-03 16:31:21 [INFO    ] modulos.barrido_wizard - [56/212] Procesando reserva: 19325764MX3
+2026-07-03 16:31:22 [INFO    ] modulos.barrido_wizard - [57/212] Procesando reserva: 19326767MX5
+2026-07-03 16:31:23 [INFO    ] modulos.barrido_wizard - [58/212] Procesando reserva: 19363457MX1
+2026-07-03 16:31:24 [INFO    ] modulos.barrido_wizard - [59/212] Procesando reserva: 19353838MX0
+2026-07-03 16:31:24 [INFO    ] modulos.barrido_wizard - [60/212] Procesando reserva: 19313130MX4
+2026-07-03 16:31:25 [INFO    ] modulos.barrido_wizard - [61/212] Procesando reserva: 19319431US5
+2026-07-03 16:31:26 [INFO    ] modulos.barrido_wizard - [62/212] Procesando reserva: 19273400CO6
+2026-07-03 16:31:26 [INFO    ] modulos.barrido_wizard - [63/212] Procesando reserva: 19339471US4
+2026-07-03 16:31:27 [INFO    ] modulos.barrido_wizard - [64/212] Procesando reserva: 19337262MX0
+2026-07-03 16:31:27 [INFO    ] modulos.barrido_wizard - [65/212] Procesando reserva: 19316502MX2
+2026-07-03 16:31:28 [INFO    ] modulos.barrido_wizard - [66/212] Procesando reserva: 19363852MX4
+2026-07-03 16:31:29 [INFO    ] modulos.barrido_wizard - [67/212] Procesando reserva: 19297760US6
+2026-07-03 16:31:30 [INFO    ] modulos.barrido_wizard - [68/212] Procesando reserva: 19303305CO0
+2026-07-03 16:31:30 [INFO    ] modulos.barrido_wizard - [69/212] Procesando reserva: 19306802MX4
+2026-07-03 16:31:31 [INFO    ] modulos.barrido_wizard - [70/212] Procesando reserva: 19334146MX6
+2026-07-03 16:31:32 [INFO    ] modulos.barrido_wizard - [71/212] Procesando reserva: 19340675US4
+2026-07-03 16:31:32 [INFO    ] modulos.barrido_wizard - [72/212] Procesando reserva: 19302026FR2
+2026-07-03 16:31:33 [INFO    ] modulos.barrido_wizard - [73/212] Procesando reserva: 19326387MX3
+2026-07-03 16:31:34 [INFO    ] modulos.barrido_wizard - [74/212] Procesando reserva: 19358097MX3
+2026-07-03 16:31:35 [INFO    ] modulos.barrido_wizard - [75/212] Procesando reserva: 19345890CA4
+2026-07-03 16:31:35 [INFO    ] modulos.barrido_wizard - [76/212] Procesando reserva: 19353808MX5
+2026-07-03 16:31:36 [INFO    ] modulos.barrido_wizard - [77/212] Procesando reserva: 19312763PA1
+2026-07-03 16:31:37 [INFO    ] modulos.barrido_wizard - [78/212] Procesando reserva: 19358353MX0
+2026-07-03 16:31:37 [INFO    ] modulos.barrido_wizard - [79/212] Procesando reserva: 19346933MX4
+2026-07-03 16:31:38 [INFO    ] modulos.barrido_wizard - [80/212] Procesando reserva: 19351184US6
+2026-07-03 16:31:39 [INFO    ] modulos.barrido_wizard - [81/212] Procesando reserva: 19316946MX5
+2026-07-03 16:31:39 [INFO    ] modulos.barrido_wizard - [82/212] Procesando reserva: 19310020MX2
+2026-07-03 16:31:40 [INFO    ] modulos.barrido_wizard - [83/212] Procesando reserva: 19327722MX1
+2026-07-03 16:31:41 [INFO    ] modulos.barrido_wizard - [84/212] Procesando reserva: 19319973IT1
+2026-07-03 16:31:42 [INFO    ] modulos.barrido_wizard - [85/212] Procesando reserva: 19335785US0
+2026-07-03 16:31:42 [INFO    ] modulos.barrido_wizard - [86/212] Procesando reserva: 19316552PL3
+2026-07-03 16:31:43 [INFO    ] modulos.barrido_wizard - [87/212] Procesando reserva: 19310354MX0
+2026-07-03 16:31:44 [INFO    ] modulos.barrido_wizard - [88/212] Procesando reserva: 19333689MX4
+2026-07-03 16:31:44 [INFO    ] modulos.barrido_wizard - [89/212] Procesando reserva: 19304824MX0
+2026-07-03 16:31:45 [INFO    ] modulos.barrido_wizard - [90/212] Procesando reserva: 19318490CO2
+2026-07-03 16:31:46 [INFO    ] modulos.barrido_wizard - [91/212] Procesando reserva: 19335179MX3
+2026-07-03 16:31:47 [INFO    ] modulos.barrido_wizard - [92/212] Procesando reserva: 19299056MX0
+2026-07-03 16:31:47 [INFO    ] modulos.barrido_wizard - [93/212] Procesando reserva: 19309215MX2
+2026-07-03 16:31:48 [INFO    ] modulos.barrido_wizard - [94/212] Procesando reserva: 19363455MX6
+2026-07-03 16:31:49 [INFO    ] modulos.barrido_wizard - [95/212] Procesando reserva: 19281580US3
+2026-07-03 16:31:50 [INFO    ] modulos.barrido_wizard - [96/212] Procesando reserva: 19255825MX1
+2026-07-03 16:31:51 [INFO    ] modulos.barrido_wizard - [97/212] Procesando reserva: 19310992US1
+2026-07-03 16:31:51 [INFO    ] modulos.barrido_wizard - [98/212] Procesando reserva: 19311127MX3
+2026-07-03 16:31:52 [INFO    ] modulos.barrido_wizard - [99/212] Procesando reserva: 19322767US2
+2026-07-03 16:31:53 [INFO    ] modulos.barrido_wizard - [100/212] Procesando reserva: 19352657MX2
+2026-07-03 16:31:53 [INFO    ] modulos.barrido_wizard - [101/212] Procesando reserva: 19313685MX6
+2026-07-03 16:31:54 [INFO    ] modulos.barrido_wizard - [102/212] Procesando reserva: 19297335MX1
+2026-07-03 16:31:55 [INFO    ] modulos.barrido_wizard - [103/212] Procesando reserva: 19311645MX3
+2026-07-03 16:31:56 [INFO    ] modulos.barrido_wizard - [104/212] Procesando reserva: 19357677MX3
+2026-07-03 16:31:56 [INFO    ] modulos.barrido_wizard - [105/212] Procesando reserva: 19347802MX5
+2026-07-03 16:31:57 [INFO    ] modulos.barrido_wizard - [106/212] Procesando reserva: 19370807MX1
+2026-07-03 16:31:58 [INFO    ] modulos.barrido_wizard - [107/212] Procesando reserva: 19333714MX1
+2026-07-03 16:31:59 [INFO    ] modulos.barrido_wizard - [108/212] Procesando reserva: 19365110MX2
+2026-07-03 16:32:00 [INFO    ] modulos.barrido_wizard - [109/212] Procesando reserva: 19368501MX5
+2026-07-03 16:32:00 [INFO    ] modulos.barrido_wizard - [110/212] Procesando reserva: 19319987MX1
+2026-07-03 16:32:01 [INFO    ] modulos.barrido_wizard - [111/212] Procesando reserva: 19301932ES6
+2026-07-03 16:32:02 [INFO    ] modulos.barrido_wizard - [112/212] Procesando reserva: 19316945MX4
+2026-07-03 16:32:02 [INFO    ] modulos.barrido_wizard - [113/212] Procesando reserva: 19332783MX1
+2026-07-03 16:32:03 [INFO    ] modulos.barrido_wizard - [114/212] Procesando reserva: 19351011US1
+2026-07-03 16:32:04 [INFO    ] modulos.barrido_wizard - [115/212] Procesando reserva: 19317126US3
+2026-07-03 16:32:04 [INFO    ] modulos.barrido_wizard - [116/212] Procesando reserva: 19342287MX6
+2026-07-03 16:32:05 [INFO    ] modulos.barrido_wizard - [117/212] Procesando reserva: 19328562MX1
+2026-07-03 16:32:06 [INFO    ] modulos.barrido_wizard - [118/212] Procesando reserva: 19348330US1
+2026-07-03 16:32:07 [INFO    ] modulos.barrido_wizard - [119/212] Procesando reserva: 19358279MX3
+2026-07-03 16:32:07 [INFO    ] modulos.barrido_wizard - [120/212] Procesando reserva: 19286436LU1
+2026-07-03 16:32:08 [INFO    ] modulos.barrido_wizard - [121/212] Procesando reserva: 19353102MX6
+2026-07-03 16:32:09 [INFO    ] modulos.barrido_wizard - [122/212] Procesando reserva: 19317651MX3
+2026-07-03 16:32:10 [INFO    ] modulos.barrido_wizard - [123/212] Procesando reserva: 19370470MX0
+2026-07-03 16:34:22 [INFO    ] __main__ - =================================================================
+2026-07-03 16:34:22 [INFO    ] __main__ - INICIO DEL BARRIDO AUTOMATICO - 2026-07-03 16:34:22
+2026-07-03 16:34:22 [INFO    ] __main__ - =================================================================
+2026-07-03 16:34:22 [INFO    ] modulos.config_loader - Cargando configuracion desde: C:\Users\angel.osalde\Documents\Automation\Barrido-reservaciones-quoted\proyecto-Barrido-quotedRate - auto\config.json
+2026-07-03 16:34:22 [INFO    ] modulos.config_loader - Configuracion cargada y validada correctamente.
+2026-07-03 16:34:22 [INFO    ] __main__ - --- PASO 1/3: Extraccion de reservas desde SQL Server ---
+2026-07-03 16:34:22 [INFO    ] modulos.extractor_sql - Dia de la semana: Friday | days_back determinado: 1
+2026-07-03 16:34:22 [INFO    ] modulos.extractor_sql - Ejecutando consulta SQL (intento 1/5)...
+2026-07-03 16:34:23 [INFO    ] modulos.extractor_sql - Registros encontrados: 212
+2026-07-03 16:34:23 [INFO    ] modulos.extractor_sql - Validacion de minimo OK (212 >= 100).
+2026-07-03 16:34:23 [INFO    ] modulos.extractor_sql - Extraccion SQL completada. Total de registros: 212
+2026-07-03 16:34:23 [INFO    ] __main__ - --- PASO 2/3: Barrido en Wizard/BlueZone ---
+2026-07-03 16:34:23 [INFO    ] modulos.barrido_wizard - Inicializando conexion con BlueZone/Wizard...
+2026-07-03 16:34:23 [INFO    ] modulos.barrido_wizard - Terminal conectada. Iniciando barrido de 212 reservas...
+2026-07-03 16:34:23 [INFO    ] modulos.barrido_wizard - [1/212] Procesando reserva: 19297760US6
+2026-07-03 16:34:23 [INFO    ] modulos.barrido_wizard - [2/212] Procesando reserva: 19303305CO0
+2026-07-03 16:34:24 [INFO    ] modulos.barrido_wizard - [3/212] Procesando reserva: 19306802MX4
+2026-07-03 16:34:25 [INFO    ] modulos.barrido_wizard - [4/212] Procesando reserva: 19334146MX6
+2026-07-03 16:34:26 [INFO    ] modulos.barrido_wizard - [5/212] Procesando reserva: 19340675US4
+2026-07-03 16:34:26 [INFO    ] modulos.barrido_wizard - [6/212] Procesando reserva: 19302026FR2
+2026-07-03 16:34:27 [INFO    ] modulos.barrido_wizard - [7/212] Procesando reserva: 19326387MX3
+2026-07-03 16:34:28 [INFO    ] modulos.barrido_wizard - [8/212] Procesando reserva: 19358097MX3
+2026-07-03 16:34:28 [INFO    ] modulos.barrido_wizard - [9/212] Procesando reserva: 19345890CA4
+2026-07-03 16:34:29 [INFO    ] modulos.barrido_wizard - [10/212] Procesando reserva: 19353808MX5
+2026-07-03 16:34:30 [INFO    ] modulos.barrido_wizard - [11/212] Procesando reserva: 19312763PA1
+2026-07-03 16:34:31 [INFO    ] modulos.barrido_wizard - [12/212] Procesando reserva: 19358353MX0
+2026-07-03 16:34:31 [INFO    ] modulos.barrido_wizard - [13/212] Procesando reserva: 19346933MX4
+2026-07-03 16:34:32 [INFO    ] modulos.barrido_wizard - [14/212] Procesando reserva: 19351184US6
+2026-07-03 16:34:33 [INFO    ] modulos.barrido_wizard - [15/212] Procesando reserva: 19316946MX5
+2026-07-03 16:34:33 [INFO    ] modulos.barrido_wizard - [16/212] Procesando reserva: 19310020MX2
+2026-07-03 16:34:34 [INFO    ] modulos.barrido_wizard - [17/212] Procesando reserva: 19327722MX1
+2026-07-03 16:34:35 [INFO    ] modulos.barrido_wizard - [18/212] Procesando reserva: 19319973IT1
+2026-07-03 16:34:35 [INFO    ] modulos.barrido_wizard - [19/212] Procesando reserva: 19335785US0
+2026-07-03 16:34:36 [INFO    ] modulos.barrido_wizard - [20/212] Procesando reserva: 19316552PL3
+2026-07-03 16:34:37 [INFO    ] modulos.barrido_wizard - [21/212] Procesando reserva: 19310354MX0
+2026-07-03 16:34:37 [INFO    ] modulos.barrido_wizard - [22/212] Procesando reserva: 19333689MX4
+2026-07-03 16:34:38 [INFO    ] modulos.barrido_wizard - [23/212] Procesando reserva: 19304824MX0
+2026-07-03 16:34:39 [INFO    ] modulos.barrido_wizard - [24/212] Procesando reserva: 19318490CO2
+2026-07-03 16:34:40 [INFO    ] modulos.barrido_wizard - [25/212] Procesando reserva: 19335179MX3
+2026-07-03 16:34:40 [INFO    ] modulos.barrido_wizard - [26/212] Procesando reserva: 19299056MX0
+2026-07-03 16:34:41 [INFO    ] modulos.barrido_wizard - [27/212] Procesando reserva: 19309215MX2
+2026-07-03 16:34:42 [INFO    ] modulos.barrido_wizard - [28/212] Procesando reserva: 19363455MX6
+2026-07-03 16:34:43 [INFO    ] modulos.barrido_wizard - [29/212] Procesando reserva: 19281580US3
+2026-07-03 16:34:43 [INFO    ] modulos.barrido_wizard - [30/212] Procesando reserva: 19255825MX1
+2026-07-03 16:34:44 [INFO    ] modulos.barrido_wizard - [31/212] Procesando reserva: 19310992US1
+2026-07-03 16:34:45 [INFO    ] modulos.barrido_wizard - [32/212] Procesando reserva: 19311127MX3
+2026-07-03 16:34:46 [INFO    ] modulos.barrido_wizard - [33/212] Procesando reserva: 19322767US2
+2026-07-03 16:34:46 [INFO    ] modulos.barrido_wizard - [34/212] Procesando reserva: 19352657MX2
+2026-07-03 16:34:47 [INFO    ] modulos.barrido_wizard - [35/212] Procesando reserva: 19313685MX6
+2026-07-03 16:34:48 [INFO    ] modulos.barrido_wizard - [36/212] Procesando reserva: 19297335MX1
+2026-07-03 16:34:49 [INFO    ] modulos.barrido_wizard - [37/212] Procesando reserva: 19311645MX3
+2026-07-03 16:34:49 [INFO    ] modulos.barrido_wizard - [38/212] Procesando reserva: 19357677MX3
+2026-07-03 16:34:50 [INFO    ] modulos.barrido_wizard - [39/212] Procesando reserva: 19347802MX5
+2026-07-03 16:34:51 [INFO    ] modulos.barrido_wizard - [40/212] Procesando reserva: 19370807MX1
+2026-07-03 16:34:51 [INFO    ] modulos.barrido_wizard - [41/212] Procesando reserva: 19333714MX1
+2026-07-03 16:34:52 [INFO    ] modulos.barrido_wizard - [42/212] Procesando reserva: 19365110MX2
+2026-07-03 16:34:53 [INFO    ] modulos.barrido_wizard - [43/212] Procesando reserva: 19368501MX5
+2026-07-03 16:34:54 [INFO    ] modulos.barrido_wizard - [44/212] Procesando reserva: 19319987MX1
+2026-07-03 16:34:54 [INFO    ] modulos.barrido_wizard - [45/212] Procesando reserva: 19301932ES6
+2026-07-03 16:34:55 [INFO    ] modulos.barrido_wizard - [46/212] Procesando reserva: 19316945MX4
+2026-07-03 16:34:56 [INFO    ] modulos.barrido_wizard - [47/212] Procesando reserva: 19332783MX1
+2026-07-03 16:34:57 [INFO    ] modulos.barrido_wizard - [48/212] Procesando reserva: 19351011US1
+2026-07-03 16:34:57 [INFO    ] modulos.barrido_wizard - [49/212] Procesando reserva: 19317126US3
+2026-07-03 16:34:58 [INFO    ] modulos.barrido_wizard - [50/212] Procesando reserva: 19342287MX6
+2026-07-03 16:34:59 [INFO    ] modulos.barrido_wizard - [51/212] Procesando reserva: 19328562MX1
+2026-07-03 16:34:59 [INFO    ] modulos.barrido_wizard - [52/212] Procesando reserva: 19348330US1
+2026-07-03 16:35:00 [INFO    ] modulos.barrido_wizard - [53/212] Procesando reserva: 19358279MX3
+2026-07-03 16:35:01 [INFO    ] modulos.barrido_wizard - [54/212] Procesando reserva: 19286436LU1
+2026-07-03 16:35:02 [INFO    ] modulos.barrido_wizard - [55/212] Procesando reserva: 19353102MX6
+2026-07-03 16:35:02 [INFO    ] modulos.barrido_wizard - [56/212] Procesando reserva: 19317651MX3
+2026-07-03 16:35:03 [INFO    ] modulos.barrido_wizard - [57/212] Procesando reserva: 19370470MX0
+2026-07-03 16:35:04 [INFO    ] modulos.barrido_wizard - [58/212] Procesando reserva: 19331169MX4
+2026-07-03 16:35:04 [INFO    ] modulos.barrido_wizard - [59/212] Procesando reserva: 19304412MX1
+2026-07-03 16:35:05 [INFO    ] modulos.barrido_wizard - [60/212] Procesando reserva: 19321434MX6
+2026-07-03 16:35:05 [INFO    ] modulos.barrido_wizard - [61/212] Procesando reserva: 19349519MX0
+2026-07-03 16:35:06 [INFO    ] modulos.barrido_wizard - [62/212] Procesando reserva: 19330591MX0
+2026-07-03 16:35:07 [INFO    ] modulos.barrido_wizard - [63/212] Procesando reserva: 19365007MX4
+2026-07-03 16:35:07 [INFO    ] modulos.barrido_wizard - [64/212] Procesando reserva: 19335956MX3
+2026-07-03 16:35:08 [INFO    ] modulos.barrido_wizard - [65/212] Procesando reserva: 19360185US5
+2026-07-03 16:35:08 [INFO    ] modulos.barrido_wizard - [66/212] Procesando reserva: 19341955MX3
+2026-07-03 16:35:09 [INFO    ] modulos.barrido_wizard - [67/212] Procesando reserva: 19368448US1
+2026-07-03 16:35:10 [INFO    ] modulos.barrido_wizard - [68/212] Procesando reserva: 19349697MX3
+2026-07-03 16:35:10 [INFO    ] modulos.barrido_wizard - [69/212] Procesando reserva: 19276370MX1
+2026-07-03 16:35:11 [INFO    ] modulos.barrido_wizard - [70/212] Procesando reserva: 19319912ES3
+2026-07-03 16:35:12 [INFO    ] modulos.barrido_wizard - [71/212] Procesando reserva: 19354953MX2
+2026-07-03 16:35:12 [INFO    ] modulos.barrido_wizard - [72/212] Procesando reserva: 19355308MX0
+2026-07-03 16:35:13 [INFO    ] modulos.barrido_wizard - [73/212] Procesando reserva: 19336991US2
+2026-07-03 16:35:14 [INFO    ] modulos.barrido_wizard - [74/212] Procesando reserva: 19297095ES6
+2026-07-03 16:35:14 [INFO    ] modulos.barrido_wizard - [75/212] Procesando reserva: 19260185US0
+2026-07-03 16:35:15 [INFO    ] modulos.barrido_wizard - [76/212] Procesando reserva: 19351633US0
+2026-07-03 16:35:16 [INFO    ] modulos.barrido_wizard - [77/212] Procesando reserva: 19353952MX2
+2026-07-03 16:35:16 [INFO    ] modulos.barrido_wizard - [78/212] Procesando reserva: 19317466US0
+2026-07-03 16:35:17 [INFO    ] modulos.barrido_wizard - [79/212] Procesando reserva: 19319111MX0
+2026-07-03 16:35:18 [INFO    ] modulos.barrido_wizard - [80/212] Procesando reserva: 19363491MX0
+2026-07-03 16:35:18 [INFO    ] modulos.barrido_wizard - [81/212] Procesando reserva: 19337171MX0
+2026-07-03 16:35:19 [INFO    ] modulos.barrido_wizard - [82/212] Procesando reserva: 19325537MX0
+2026-07-03 16:35:20 [INFO    ] modulos.barrido_wizard - [83/212] Procesando reserva: 19348286US6
+2026-07-03 16:35:20 [INFO    ] modulos.barrido_wizard - [84/212] Procesando reserva: 19357741US4
+2026-07-03 16:35:21 [INFO    ] modulos.barrido_wizard - [85/212] Procesando reserva: 19312436US3
+2026-07-03 16:35:22 [INFO    ] modulos.barrido_wizard - [86/212] Procesando reserva: 19370658MX6
+2026-07-03 16:35:22 [INFO    ] modulos.barrido_wizard - [87/212] Procesando reserva: 19319812US1
+2026-07-03 16:35:23 [INFO    ] modulos.barrido_wizard - [88/212] Procesando reserva: 19318119MX2
+2026-07-03 16:35:24 [INFO    ] modulos.barrido_wizard - [89/212] Procesando reserva: 19319499MX3
+2026-07-03 16:35:24 [INFO    ] modulos.barrido_wizard - [90/212] Procesando reserva: 19350518MX5
+2026-07-03 16:35:25 [INFO    ] modulos.barrido_wizard - [91/212] Procesando reserva: 19316352MX6
+2026-07-03 16:35:26 [INFO    ] modulos.barrido_wizard - [92/212] Procesando reserva: 19358024MX0
+2026-07-03 16:35:26 [INFO    ] modulos.barrido_wizard - [93/212] Procesando reserva: 19346998US6
+2026-07-03 16:35:27 [INFO    ] modulos.barrido_wizard - [94/212] Procesando reserva: 19363540MX0
+2026-07-03 16:35:27 [INFO    ] modulos.barrido_wizard - [95/212] Procesando reserva: 19351244MX3
+2026-07-03 16:35:28 [INFO    ] modulos.barrido_wizard - [96/212] Procesando reserva: 19338389MX0
+2026-07-03 16:35:29 [INFO    ] modulos.barrido_wizard - [97/212] Procesando reserva: 19341400MX1
+2026-07-03 16:35:29 [INFO    ] modulos.barrido_wizard - [98/212] Procesando reserva: 19358226MX6
+2026-07-03 16:35:30 [INFO    ] modulos.barrido_wizard - [99/212] Procesando reserva: 19263938US1
+2026-07-03 16:35:30 [INFO    ] modulos.barrido_wizard - [100/212] Procesando reserva: 19320037US2
+2026-07-03 16:35:31 [INFO    ] modulos.barrido_wizard - [101/212] Procesando reserva: 19352598MX6
+2026-07-03 16:35:32 [INFO    ] modulos.barrido_wizard - [102/212] Procesando reserva: 19328941MX2
+2026-07-03 16:35:32 [INFO    ] modulos.barrido_wizard - [103/212] Procesando reserva: 19348222US5
+2026-07-03 16:35:33 [INFO    ] modulos.barrido_wizard - [104/212] Procesando reserva: 19342035US6
+2026-07-03 16:35:34 [INFO    ] modulos.barrido_wizard - [105/212] Procesando reserva: 19309879MX1
+2026-07-03 16:35:34 [INFO    ] modulos.barrido_wizard - [106/212] Procesando reserva: 19362495US5
+2026-07-03 16:35:35 [INFO    ] modulos.barrido_wizard - [107/212] Procesando reserva: 19329706MX4
+2026-07-03 16:35:36 [INFO    ] modulos.barrido_wizard - [108/212] Procesando reserva: 19258380MX1
+2026-07-03 16:35:36 [INFO    ] modulos.barrido_wizard - [109/212] Procesando reserva: 19349978MX4
+2026-07-03 16:35:37 [INFO    ] modulos.barrido_wizard - [110/212] Procesando reserva: 19348625MX2
+2026-07-03 16:35:37 [INFO    ] modulos.barrido_wizard - [111/212] Procesando reserva: 19329132MX4
+2026-07-03 16:35:38 [INFO    ] modulos.barrido_wizard - [112/212] Procesando reserva: 19350212MX0
+2026-07-03 16:35:39 [INFO    ] modulos.barrido_wizard - [113/212] Procesando reserva: 19358392US4
+2026-07-03 16:35:39 [INFO    ] modulos.barrido_wizard - [114/212] Procesando reserva: 19314585MX3
+2026-07-03 16:35:40 [INFO    ] modulos.barrido_wizard - [115/212] Procesando reserva: 19316604US6
+2026-07-03 16:35:41 [INFO    ] modulos.barrido_wizard - [116/212] Procesando reserva: 19319893ES5
+2026-07-03 16:35:41 [INFO    ] modulos.barrido_wizard - [117/212] Procesando reserva: 19331615MX2
+2026-07-03 16:35:42 [INFO    ] modulos.barrido_wizard - [118/212] Procesando reserva: 19347311MX4
+2026-07-03 16:35:43 [INFO    ] modulos.barrido_wizard - [119/212] Procesando reserva: 19358720MX3
+2026-07-03 16:35:43 [INFO    ] modulos.barrido_wizard - [120/212] Procesando reserva: 19289871ES6
+2026-07-03 16:35:44 [INFO    ] modulos.barrido_wizard - [121/212] Procesando reserva: 19358072US6
+2026-07-03 16:35:44 [INFO    ] modulos.barrido_wizard - [122/212] Procesando reserva: 19322322MX5
+2026-07-03 16:35:45 [INFO    ] modulos.barrido_wizard - [123/212] Procesando reserva: 19319034US0
+2026-07-03 16:35:46 [INFO    ] modulos.barrido_wizard - [124/212] Procesando reserva: 19320372MX1
+2026-07-03 16:35:46 [INFO    ] modulos.barrido_wizard - [125/212] Procesando reserva: 19315468MX4
+2026-07-03 16:35:47 [INFO    ] modulos.barrido_wizard - [126/212] Procesando reserva: 19309058CO6
+2026-07-03 16:35:48 [INFO    ] modulos.barrido_wizard - [127/212] Procesando reserva: 19336442US6
+2026-07-03 16:35:48 [INFO    ] modulos.barrido_wizard - [128/212] Procesando reserva: 19299733US5
+2026-07-03 16:35:49 [INFO    ] modulos.barrido_wizard - [129/212] Procesando reserva: 19362296MX2
+2026-07-03 16:35:49 [INFO    ] modulos.barrido_wizard - [130/212] Procesando reserva: 19299258US6
+2026-07-03 16:35:50 [INFO    ] modulos.barrido_wizard - [131/212] Procesando reserva: 19341702US2
+2026-07-03 16:35:51 [INFO    ] modulos.barrido_wizard - [132/212] Procesando reserva: 19309372CO5
+2026-07-03 16:35:51 [INFO    ] modulos.barrido_wizard - [133/212] Procesando reserva: 19330888MX3
+2026-07-03 16:35:52 [INFO    ] modulos.barrido_wizard - [134/212] Procesando reserva: 19360993MX1
+2026-07-03 16:35:53 [INFO    ] modulos.barrido_wizard - [135/212] Procesando reserva: 19333353MX4
+2026-07-03 16:35:53 [INFO    ] modulos.barrido_wizard - [136/212] Procesando reserva: 19348980MX0
+2026-07-03 16:35:54 [INFO    ] modulos.barrido_wizard - [137/212] Procesando reserva: 19333605MX4
+2026-07-03 16:35:55 [INFO    ] modulos.barrido_wizard - [138/212] Procesando reserva: 19300671DE5
+2026-07-03 16:35:56 [INFO    ] modulos.barrido_wizard - [139/212] Procesando reserva: 19362751MX2
+2026-07-03 16:35:56 [INFO    ] modulos.barrido_wizard - [140/212] Procesando reserva: 19314056MX6
+2026-07-03 16:35:57 [INFO    ] modulos.barrido_wizard - [141/212] Procesando reserva: 19321574ES6
+2026-07-03 16:35:58 [INFO    ] modulos.barrido_wizard - [142/212] Procesando reserva: 19314637US6
+2026-07-03 16:35:58 [INFO    ] modulos.barrido_wizard - [143/212] Procesando reserva: 19285532IT0
+2026-07-03 16:35:59 [INFO    ] modulos.barrido_wizard - [144/212] Procesando reserva: 19327101MX3
+2026-07-03 16:36:00 [INFO    ] modulos.barrido_wizard - [145/212] Procesando reserva: 19335729US0
+2026-07-03 16:36:01 [INFO    ] modulos.barrido_wizard - [146/212] Procesando reserva: 19357816MX2
+2026-07-03 16:36:01 [INFO    ] modulos.barrido_wizard - [147/212] Procesando reserva: 19311080MX5
+2026-07-03 16:36:02 [INFO    ] modulos.barrido_wizard - [148/212] Procesando reserva: 19347619MX4
+2026-07-03 16:36:03 [INFO    ] modulos.barrido_wizard - [149/212] Procesando reserva: 19316827PL5
+2026-07-03 16:36:03 [INFO    ] modulos.barrido_wizard - [150/212] Procesando reserva: 19302391US3
+2026-07-03 16:36:04 [INFO    ] modulos.barrido_wizard - [151/212] Procesando reserva: 19343658MX5
+2026-07-03 16:36:05 [INFO    ] modulos.barrido_wizard - [152/212] Procesando reserva: 19305454MX0
+2026-07-03 16:36:05 [INFO    ] modulos.barrido_wizard - [153/212] Procesando reserva: 19336258US4
+2026-07-03 16:36:06 [INFO    ] modulos.barrido_wizard - [154/212] Procesando reserva: 19360820US3
+2026-07-03 16:36:07 [INFO    ] modulos.barrido_wizard - [155/212] Procesando reserva: 19330201MX2
+2026-07-03 16:36:07 [INFO    ] modulos.barrido_wizard - [156/212] Procesando reserva: 19290898MX4
+2026-07-03 16:36:08 [INFO    ] modulos.barrido_wizard - [157/212] Procesando reserva: 19356887US4
+2026-07-03 16:36:09 [INFO    ] modulos.barrido_wizard - [158/212] Procesando reserva: 19328357MX6
+2026-07-03 16:36:09 [INFO    ] modulos.barrido_wizard - [159/212] Procesando reserva: 19315171CO1
+2026-07-03 16:36:10 [INFO    ] modulos.barrido_wizard - [160/212] Procesando reserva: 19338349MX2
+2026-07-03 16:36:11 [INFO    ] modulos.barrido_wizard - [161/212] Procesando reserva: 19333792MX2
+2026-07-03 16:36:11 [INFO    ] modulos.barrido_wizard - [162/212] Procesando reserva: 19256052MX4
+2026-07-03 16:36:12 [INFO    ] modulos.barrido_wizard - [163/212] Procesando reserva: 19349836MX2
+2026-07-03 16:36:13 [INFO    ] modulos.barrido_wizard - [164/212] Procesando reserva: 19329124MX3
+2026-07-03 16:36:13 [INFO    ] modulos.barrido_wizard - [165/212] Procesando reserva: 19276712SE0
+2026-07-03 16:36:14 [INFO    ] modulos.barrido_wizard - [166/212] Procesando reserva: 19357656MX3
+2026-07-03 16:36:14 [INFO    ] modulos.barrido_wizard - [167/212] Procesando reserva: 19329586MX3
+2026-07-03 16:36:15 [INFO    ] modulos.barrido_wizard - [168/212] Procesando reserva: 19311228US6
+2026-07-03 16:36:16 [INFO    ] modulos.barrido_wizard - [169/212] Procesando reserva: 19358475MX3
+2026-07-03 16:36:17 [INFO    ] modulos.barrido_wizard - [170/212] Procesando reserva: 19317259MX3
+2026-07-03 16:36:17 [INFO    ] modulos.barrido_wizard - [171/212] Procesando reserva: 19348586MX5
+2026-07-03 16:36:18 [INFO    ] modulos.barrido_wizard - [172/212] Procesando reserva: 19352042US3
+2026-07-03 16:36:18 [INFO    ] modulos.barrido_wizard - [173/212] Procesando reserva: 19279891US1
+2026-07-03 16:36:19 [INFO    ] modulos.barrido_wizard - [174/212] Procesando reserva: 19356778US0
+2026-07-03 16:36:20 [INFO    ] modulos.barrido_wizard - [175/212] Procesando reserva: 19351853MX3
+2026-07-03 16:36:20 [INFO    ] modulos.barrido_wizard - [176/212] Procesando reserva: 19256609MX1
+2026-07-03 16:36:21 [INFO    ] modulos.barrido_wizard - [177/212] Procesando reserva: 19315339MX1
+2026-07-03 16:36:22 [INFO    ] modulos.barrido_wizard - [178/212] Procesando reserva: 19352462MX3
+2026-07-03 16:36:23 [INFO    ] modulos.barrido_wizard - [179/212] Procesando reserva: 19255785MX3
+2026-07-03 16:36:23 [INFO    ] modulos.barrido_wizard - [180/212] Procesando reserva: 19343266MX5
+2026-07-03 16:36:24 [INFO    ] modulos.barrido_wizard - [181/212] Procesando reserva: 19349572MX4
+2026-07-03 16:36:25 [INFO    ] modulos.barrido_wizard - [182/212] Procesando reserva: 19308738MX1
+2026-07-03 16:36:35 [INFO    ] modulos.barrido_wizard - [183/212] Procesando reserva: 19280528DE1
+2026-07-03 16:36:36 [INFO    ] modulos.barrido_wizard - [184/212] Procesando reserva: 19303185MX6
+2026-07-03 16:36:36 [INFO    ] modulos.barrido_wizard - [185/212] Procesando reserva: 19325719MX0
+2026-07-03 16:36:37 [INFO    ] modulos.barrido_wizard - [186/212] Procesando reserva: 19285492DE2
+2026-07-03 16:36:38 [INFO    ] modulos.barrido_wizard - [187/212] Procesando reserva: 19348296MX2
+2026-07-03 16:36:39 [INFO    ] modulos.barrido_wizard - [188/212] Procesando reserva: 19366062US2
+2026-07-03 16:36:39 [INFO    ] modulos.barrido_wizard - [189/212] Procesando reserva: 19276777GB2
+2026-07-03 16:36:40 [INFO    ] modulos.barrido_wizard - [190/212] Procesando reserva: 19300604DE1
+2026-07-03 16:36:41 [INFO    ] modulos.barrido_wizard - [191/212] Procesando reserva: 19349166MX4
+2026-07-03 16:36:42 [INFO    ] modulos.barrido_wizard - [192/212] Procesando reserva: 19351897MX5
+2026-07-03 16:36:42 [INFO    ] modulos.barrido_wizard - [193/212] Procesando reserva: 19347561MX2
+2026-07-03 16:36:43 [INFO    ] modulos.barrido_wizard - [194/212] Procesando reserva: 19307133MX6
+2026-07-03 16:36:44 [INFO    ] modulos.barrido_wizard - [195/212] Procesando reserva: 19349671MX5
+2026-07-03 16:36:44 [INFO    ] modulos.barrido_wizard - [196/212] Procesando reserva: 19328259MX6
+2026-07-03 16:36:45 [INFO    ] modulos.barrido_wizard - [197/212] Procesando reserva: 19357420US5
+2026-07-03 16:36:46 [INFO    ] modulos.barrido_wizard - [198/212] Procesando reserva: 19355237MX6
+2026-07-03 16:36:47 [INFO    ] modulos.barrido_wizard - [199/212] Procesando reserva: 19353794MX5
+2026-07-03 16:36:47 [INFO    ] modulos.barrido_wizard - [200/212] Procesando reserva: 19313389MX4
+2026-07-03 16:36:48 [INFO    ] modulos.barrido_wizard - [201/212] Procesando reserva: 19363562MX1
+2026-07-03 16:36:49 [INFO    ] modulos.barrido_wizard - [202/212] Procesando reserva: 19325764MX3
+2026-07-03 16:36:50 [INFO    ] modulos.barrido_wizard - [203/212] Procesando reserva: 19326767MX5
+2026-07-03 16:36:50 [INFO    ] modulos.barrido_wizard - [204/212] Procesando reserva: 19363457MX1
+2026-07-03 16:36:51 [INFO    ] modulos.barrido_wizard - [205/212] Procesando reserva: 19353838MX0
+2026-07-03 16:36:52 [INFO    ] modulos.barrido_wizard - [206/212] Procesando reserva: 19313130MX4
+2026-07-03 16:36:52 [INFO    ] modulos.barrido_wizard - [207/212] Procesando reserva: 19319431US5
+2026-07-03 16:36:53 [INFO    ] modulos.barrido_wizard - [208/212] Procesando reserva: 19273400CO6
+2026-07-03 16:36:54 [INFO    ] modulos.barrido_wizard - [209/212] Procesando reserva: 19339471US4
+2026-07-03 16:36:54 [INFO    ] modulos.barrido_wizard - [210/212] Procesando reserva: 19337262MX0
+2026-07-03 16:36:55 [INFO    ] modulos.barrido_wizard - [211/212] Procesando reserva: 19316502MX2
+2026-07-03 16:36:56 [INFO    ] modulos.barrido_wizard - [212/212] Procesando reserva: 19363852MX4
+2026-07-03 16:36:57 [INFO    ] modulos.barrido_wizard - Barrido completado. Total procesadas: 212
+2026-07-03 16:36:57 [INFO    ] __main__ - --- PASO 3/3: Subida a base de datos ---
+2026-07-03 16:36:57 [INFO    ] modulos.uploader_bd - Conectando a BD de destino (svrbdpricing / CatalogosYielding)...
+2026-07-03 16:36:57 [INFO    ] modulos.uploader_bd - Insercion completada: 212 filas insertadas en dbo.Barrido_quoted.
+2026-07-03 16:36:57 [INFO    ] __main__ - El barrido automatico se completo exitosamente.
+
+Dia de ejecucion   : Friday 03/07/2026
+Dias consultados   : -1 dia(s) hacia atras
+Fecha de consulta  : 2026-07-03
+Reservas procesadas: 212
+Filas insertadas   : 212
+Duracion total     : 0:02:34
+2026-07-03 16:37:01 [INFO    ] modulos.notificador - Correo enviado: '[Barrido Automatico] Proceso completado exitosamente' -> ['angel.osalde@avis.com.mx']
+2026-07-03 16:37:01 [INFO    ] __main__ - =================================================================
+2026-07-03 16:37:01 [INFO    ] __main__ - BARRIDO FINALIZADO - 2026-07-03 16:36:57
+2026-07-03 16:37:01 [INFO    ] __main__ - =================================================================
+2026-07-28 11:01:49 [INFO    ] __main__ - =================================================================
+2026-07-28 11:01:49 [INFO    ] __main__ - INICIO DEL BARRIDO AUTOMATICO - 2026-07-28 11:01:49
+2026-07-28 11:01:49 [INFO    ] __main__ - =================================================================
+2026-07-28 11:01:49 [INFO    ] modulos.config_loader - Cargando configuracion desde: C:\Users\angel.osalde\Documents\Automation\Barrido-reservaciones-quoted\proyecto-Barrido-quotedRate - auto\config.json
+2026-07-28 11:01:49 [CRITICAL] __main__ - No se pudo cargar la configuracion: No se encontro el archivo de configuracion: C:\Users\angel.osalde\Documents\Automation\Barrido-reservaciones-quoted\proyecto-Barrido-quotedRate - auto\config.json

@@ -1,0 +1,5 @@
+La ejecucion ya ha sido probada, en el entorno fue correcto, resta ponerlo a funcionar para ver como se comporta, lo compilare y lo mandare al ejecutor para ver que hace y que sube a la base.
+
+Se comporto como se esperaba, luego de 2 semanas de ejecucion, desde el 2026-06-19 hasta el 2026-07-03, se ejecutaron sin problema durante la semana, durante los fines de semana es donde se presentaron problemas, los minimos de reservas eran bajos, entonces se bajaron las reservas minimas, luego, paso que la terminal se desconecto un dia y refreso al siguiente, pera ello un dia no se ejecutó. Por ello se regresara al viejo sistema, de ejecutarse solo de Lunes a viernes, donde el lunes se ejecutara con un cast de -3 días y del martes al viernes con -1 dia de cast.
+
+python32 -m PyInstaller --onefile --name="Barrido-reservas-auto" barrido_auto.py

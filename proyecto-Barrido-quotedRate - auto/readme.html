@@ -1,0 +1,121 @@
+
+		<head>
+			<style type="text/css" media="screen">
+				body,html{font-family:var(--markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui, "Ubuntu", "Droid Sans", sans-serif);font-size:var(--markdown-font-size,14px);padding:0 26px;line-height:var(--markdown-line-height,22px);word-wrap:break-word}body{padding-top:1em}h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}h2,h3,h4,h5,h6{font-weight:400;margin-bottom:.2em}img{max-width:100%;max-height:100%}a{text-decoration:none}a:hover{text-decoration:underline}a:focus,input:focus,select:focus,textarea:focus{outline:1px solid -webkit-focus-ring-color;outline-offset:-1px}p{margin-bottom:.7em}ol,ul{margin-bottom:.7em}hr{border:0;height:2px;border-bottom:2px solid}h1{padding-bottom:.3em;line-height:1.2;border-bottom-width:1px;border-bottom-style:solid;font-weight:400}table{border-collapse:collapse}th{text-align:left;border-bottom:1px solid}td,th{padding:5px 10px}table>tbody>tr+tr>td{border-top:1px solid}blockquote{margin:0 7px 0 5px;padding:0 16px 0 10px;border-left-width:5px;border-left-style:solid}code{font-family:var(--vscode-editor-font-family, "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace);font-size:1em;line-height:1.357em}body.wordWrap pre{white-space:pre-wrap}pre.hljs code>div,pre:not(.hljs){padding:16px;border-radius:3px;overflow:auto}pre code{color:var(--vscode-editor-foreground);tab-size:4}
+			</style>
+		</head>
+		<body>
+			<h1 id="seccion-de-automatizacion-del-json">Seccion de <strong>Automatizacion</strong> del json</h1>
+<h3 id="prueba">Prueba</h3>
+<p> <code>Tipo</code> : True/False</p>
+<p>Activa o desactiva el modo de prueba</p>
+<ul>
+<li><code>true</code> → El proceso corre completo (SQL  Wizard) pero no escribe nada en la BD. Ideal para validar que todo funciona sin riesgo.</li>
+<li><code>false</code> → Modo producción. Sube los datos a dbo.Barrido_quoted al terminar.</li>
+</ul>
+<hr>
+<h3 id="days_back">days_back</h3>
+<p><code>Tipo</code>: numero entero positivo (1, 2, 3...)</p>
+<p>Valor de respaldo. Cuantos dias atras va la consulta SQL si el dia actual
+no esta definido en <code>days_back_por_dia</code> (ver abajo).</p>
+<ul>
+<li><code>1</code> → trae reservas del dia de ayer.</li>
+<li><code>3</code> → trae los ultimos 3 dias.</li>
+</ul>
+<hr>
+<h3 id="days_back_por_dia">days_back_por_dia</h3>
+<p><code>Tipo</code>: objeto JSON con claves <code>&quot;0&quot;</code> a <code>&quot;6&quot;</code> (dia de la semana de Python)</p>
+<p>Permite definir cuantos dias atras se consultan <strong>segun el dia en que corre el proceso</strong>.
+Tiene prioridad sobre <code>days_back</code>. Si un dia no aparece en el mapa, se usa <code>days_back</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Clave</th>
+<th>Dia</th>
+<th>Valor recomendado</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&quot;0&quot;</code></td>
+<td>Lunes</td>
+<td><code>3</code> (cubre vie + sab + dom)</td>
+</tr>
+<tr>
+<td><code>&quot;1&quot;</code></td>
+<td>Martes</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>&quot;2&quot;</code></td>
+<td>Miercoles</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>&quot;3&quot;</code></td>
+<td>Jueves</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>&quot;4&quot;</code></td>
+<td>Viernes</td>
+<td><code>1</code></td>
+</tr>
+<tr>
+<td><code>&quot;5&quot;</code></td>
+<td>Sabado</td>
+<td>(no se usa si el programador corre lun-vie)</td>
+</tr>
+<tr>
+<td><code>&quot;6&quot;</code></td>
+<td>Domingo</td>
+<td>(no se usa si el programador corre lun-vie)</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Configuracion actual: el Programador de Windows ejecuta de lunes a viernes.
+El lunes jala 3 dias para cubrir el fin de semana perdido por inestabilidad de red.</p>
+</blockquote>
+<hr>
+<h3 id="min_reservas">min_reservas</h3>
+<p><code>Tipo</code>: número entero (100, 150…)</p>
+<p>Mínimo de reservas que debe regresar la consulta SQL para que el proceso continúe.</p>
+<ul>
+<li>Si la consulta trae menos de este número, el script asume que la data aún no está disponible y espera antes de reintentar.<blockquote>
+<p>Rango normal de operación: 100–300. Se recomienda dejarlo en 100.</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="espera_min_reservas_seg">espera_min_reservas_seg</h3>
+<p><code>Tipo</code>: segundos (300 = 5 minutos)</p>
+<p>Cuánto tiempo espera el script entre cada reintento cuando el número de reservas no alcanza el mínimo.</p>
+<ul>
+<li><code>300</code> → espera 5 minutos antes de volver a consultar SQL.<blockquote>
+<p>Si la data tarda en llegar, puedes subirlo a 600 (10 min).</p>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h3 id="reintentos_min_reservas">reintentos_min_reservas</h3>
+<p><code>Tipo</code>: número entero (5, 3, 10…)</p>
+<p>Cuántas veces reintenta la consulta SQL si no llega al mínimo de reservas antes de rendirse y mandar correo.</p>
+<blockquote>
+<p>Con los valores por defecto: esperará hasta 5 × 5 min = 25 minutos antes de abortar y notificarte.</p>
+</blockquote>
+<hr>
+<h3 id="reintentos_terminal">reintentos_terminal</h3>
+<p><code>Tipo</code>: número entero (10, 5…)</p>
+<p>Cuántos intentos hace para reconectar BlueZone si detecta que la terminal se desconectó (ya sea al inicio o durante el barrido).</p>
+<blockquote>
+<p>Si todos los intentos fallan, manda correo de alerta y aborta.</p>
+</blockquote>
+<hr>
+<h3 id="espera_terminal_seg">espera_terminal_seg</h3>
+<p><code>Tipo</code>: segundos (60 = 1 minuto)</p>
+<p>Cuánto espera entre cada intento de reconexión de BlueZone.</p>
+<blockquote>
+<p>Con los valores por defecto: esperará hasta 10 × 60 seg = 10 minutos antes de declarar la terminal como inaccesible.</p>
+</blockquote>
+<hr>
+
+		</body>
