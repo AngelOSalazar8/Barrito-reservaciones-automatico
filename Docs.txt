@@ -1,0 +1,17 @@
+Para poder resolver los errores de coneccion con wizzard se debe instalar
+python de 32 bits, pero no basta con instalar la terminal de 32 bits más
+reciente, sino que se debe buscar las librerias que se usan en el script
+sean compatibles. 
+Estas son
+	- pandas 2.0.3  
+	- numpy 1.24.3
+
+ambos son necesarios
+
+de ahi la version de pywin32 que sea en curso mientras tenga soporte 
+32 bits
+
+
+y para manejar bases de datos puedes usar 
+openpyxl                  3.1.5 
+pyodbc                    5.3.0 
